@@ -192,13 +192,14 @@ var treeExpression = createBinaryTree();
 
 // this will print out the solution to the first interview question, which converts
 // the binary tree into a proper expression
-console.log("\n\nSolution to interview question number 1");
+console.log("\n\nConversion of tree built in the progam to a composite function is:");
 console.log(convert_tree_to_expression(treeExpression.root) + "\n\n");
 
 // this expression will be used to test the solution for interview question 2
 // user can change this expression to test the program
-var stringExpression = "f(x(k(l,o)),g(n,m))";
-console.log("The expression being used to test solution 2 is: " + stringExpression + "\n\n");
+var stringExpression = "f(x,y)";
+console.log("The expression being used to test the conversion from an expression to a binary tree is:\n"
+        + stringExpression + "\n\n");
 
 // the tree is built based on the expression in line 200, this is the solution to
 // interview question 2
@@ -217,5 +218,5 @@ console.log(postOrderTreeTraversal(builtTree.root) + "\n\n");
 // problem 1
 // this means that the expression typed in line 200 can be used to test both the
 // solution the interview question 1 and 2
-console.log("The expression is printed out using the solution to problem 1:");
+console.log("The expression is printed based on the binary tree representation:");
 console.log(convert_tree_to_expression(builtTree.root) + "\n\n");
